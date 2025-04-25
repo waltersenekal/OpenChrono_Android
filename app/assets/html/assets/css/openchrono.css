@@ -1,0 +1,658 @@
+html,
+body {
+    font-size: 16px;
+    /* Default font size */
+    height: 100%;
+    margin: 0;
+    font-family: 'UbuntuRegular', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+/* Full Width Container */
+.container1-full-width {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer-text {
+    font-style: italic;
+}
+
+/* Button Styles */
+.round-btn,
+.circle_green,
+.circle_red {
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.round-btn {
+    margin-top: 15vw;
+}
+
+.circle_green {
+    background-color: #00ff00;
+    /* Green */
+    margin-top: 5vh;
+}
+
+.circle_red {
+    background-color: #ff0000;
+    /* Red */
+    margin-top: 5vh;
+}
+
+.icon_white {
+    color: #ffffff;
+    font-size: 20vw;
+}
+
+/* Text Containers */
+.key-value {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.key-value-frame {
+    margin-top: 30vw;
+}
+
+.centered-text {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.amount-text,
+.under-amount-text {
+    font-weight: bold;
+}
+
+.amount-text {
+    font-size: 3rem;
+    color: darkblue;
+}
+
+.under-amount-text {
+    font-size: 1.5rem;
+    color: darkblue;
+}
+
+/* Button Containers */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.btn-cancel-100 {
+    background-color: #d32f2f;
+    /* Materialize red */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cancel-45 {
+    background-color: #d32f2f;
+    /* Materialize red */
+    color: white;
+    border: none;
+    width: 45%;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-enter-100 {
+    background-color: #218838;
+    ;
+    /* Materialize green */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-enter-45 {
+    background-color: #218838;
+    ;
+    /* Materialize green */
+    color: white;
+    border: none;
+    width: 45%;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-yes {
+    background-color: #2ecc71;
+    color: white;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+.btn-no {
+    background-color: #e74c3c;
+    color: white;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+
+/* Buttons */
+.btn-rectangle_90,
+.btn-rectangle_45,
+.btn-square,
+.btn-rectangle_90_sbs,
+.btn-rectangle_45_sbs {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.0rem;
+    display: flex;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-rectangle_90 {
+    width: 90%;
+}
+
+.btn-rectangle_45 {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.btn-square {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn-rectangle_90_sbs {
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Vertically center content */
+    justify-content: flex-start;
+    /* Align content to the left */
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.0rem;
+    height: auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.btn-rectangle_45_sbs {
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Vertically center content */
+    justify-content: flex-start;
+    /* Align content to the left */
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.0rem;
+    height: auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.svg-menu-bar-icon,
+.svg-drop-menu-icon,
+.svg-big-button-icon,
+.svg-small-button-icon {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.svg-menu-bar-icon {
+    width: 7vw;
+}
+
+.svg-drop-menu-icon {
+    width: 3vw;
+}
+
+.svg-big-button-icon {
+    height: 80%;
+    margin-right: 10px;
+}
+
+.svg-small-button-icon {
+    width: 6vw;
+}
+
+/* Custom Spinner */
+.custom-preloader-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.custom-preloader-wrapper.big {
+    width: 50vw;
+    height: 50vw;
+}
+
+.custom-preloader-wrapper.active {
+    animation: container-rotate 1568ms linear infinite;
+}
+
+/* Keypad Buttons */
+.kb-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kb-button {
+    flex: 1 0 25%;
+    margin: 5px;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kb-button:active {
+    background-color: #0056b3;
+}
+
+.decimal {
+    background-color: #007bff;
+}
+
+.decimal:active {
+    background-color: #0056b3;
+}
+
+.clear {
+    background-color: #dc3545;
+}
+
+.clear:active {
+    background-color: #c82333;
+}
+
+.back {
+    background-color: #dfeb3c;
+}
+
+.back:active {
+    background-color: #dcf407;
+}
+
+.submit {
+    background-color: #28a745;
+}
+
+.submit:active {
+    background-color: #218838;
+}
+
+.kb-button span {
+    font-size: 2em;
+}
+
+.svg-big-button-icon_sbs {
+    width: 32px;
+    /* Adjust icon size */
+    height: 32px;
+    margin-right: 10px;
+    /* Space between icon and text */
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+}
+
+button span {
+    flex-grow: 1;
+    /* Allow text to take up remaining space */
+    text-align: center;
+    /* Center the text */
+}
+
+.image-container {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Pick from here https://fonts.google.com/icons */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    /*normal / 400*/
+
+    src: url('/assets/fonts/material-icons/MaterialIcons-Regular.otf') format('opentype'),
+        url('/assets/fonts/material-icons/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+/* Regular */
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+
+/* Bold */
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+}
+
+/* Light */
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+/* Italic */
+@font-face {
+    font-family: 'UbuntuItalic';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-Italic.ttf') format('truetype');
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'UbuntuBoldItalic';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'UbuntuLightItalic';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
+}
+
+/* Medium */
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+}
+
+/* Medium Italic */
+@font-face {
+    font-family: 'UbuntuMediumItalic';
+    src: url('/assets/fonts/Ubuntu/Ubuntu-MediumItalic.ttf') format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 64px;
+    /* Adjust size as needed */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    vertical-align: middle;
+}
+
+.corner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* Prevent interference with other elements */
+}
+
+.corner-area {
+    position: absolute;
+    width: 15%;
+    /* Adjust size for dev visibility */
+    height: 15%;
+    pointer-events: auto;
+    /* Enable interaction */
+    opacity: 0.5;
+    /* Make them semi-transparent */
+}
+
+#top-left {
+    top: 0;
+    left: 0;
+    /*background-color: red; / * Top-left corner */
+}
+
+#top-right {
+    top: 0;
+    right: 0;
+    /*background-color: blue; / * Top-right corner */
+}
+
+#bottom-left {
+    bottom: 0;
+    left: 0;
+    /*background-color: green; / * Bottom-left corner */
+}
+
+#bottom-right {
+    bottom: 0;
+    right: 0;
+    /*background-color: yellow; / * Bottom-right corner */
+}
+
+.message-container {
+
+    background-color: #f0f0f0;
+    /* Light gray background */
+    border-radius: 20px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Drop shadow */
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    /* Control width for responsiveness */
+    margin: 0 auto;
+    /* Centering */
+    text-align: center;
+    /* Left align the message data */
+}
+
+.message-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00796b;
+    /* Dark teal for header */
+}
+
+.message-data {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    color: #333;
+    padding-top: 60px;
+    /* Adjusted to match header height */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1000;
+    height: 60px;
+    /* Explicit height to ensure consistent layout */
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+    fill: #009786;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 30px;
+    color: #009786;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.settings-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - 60px);
+    /* Allow scrolling minus header height */
+}
+
+.settings-category {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.text h2 {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+.text p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.disabled-section {
+    color: gray;
+    pointer-events: none;
+}
+
+.disabled-section label,
+.disabled-section input,
+.disabled-section select,
+.disabled-section p {
+    color: gray !important;
+}
+
+.disabled-section input::placeholder {
+    color: lightgray !important;
+}
+
+.switch label .lever {
+    height: 20px;
+    width: 40px;
+}
+
+.switch label span {
+    display: none;
+    /* Hide the "On" and "Off" text */
+}

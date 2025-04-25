@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="width: 100%;min-width: 100%;max-width: 100%;height: 100%;min-height: 100%;max-height: 100%;margin-bottom: 0px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Splash</title>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/openchrono.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/openchrono.css">
+</head>
+
+<body style="background: url(&quot;assets/img/png/splash_light.png&quot;) center / cover no-repeat;">
+     <div style="margin-top: 200px;"></div>
+
+
+
+
+     <div class="custom-preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+  
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+  
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+  
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+
+
+    
+    <div class="container" >
+        <h3 class="centered-text">Loading . . . .</h3>
+    </div>
+    <!--<div class="btn-container centered-text">
+			<button class="btn btn-info" onClick="handleAction('Config')">Config</button>
+			<button class="btn btn-danger" onClick="handleAction('Exit')">Exit</button>
+    </div> -->
+</body>
+
+</html>

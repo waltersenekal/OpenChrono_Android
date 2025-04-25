@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>No Permission</title>
+
+    <!-- Materialize CSS and custom styles -->
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/openchrono.css">
+
+    <!-- JavaScript files -->
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/openchrono.js"></script>
+</head>
+
+<body style="background: center / cover no-repeat;">
+
+    <div class="container">
+        <h3 class="centered-text" style="font-family: 'UbuntuBold';">We need the permission, please restart the app and
+            grant the permission!</h3>
+        <div class="button-container">
+            <button class="btn btn-rectangle_90_sbs" style="height: 60px;" onclick="handleAction('Exit');">
+                <img src="assets/img/svg/exit.svg" class="svg-big-button-icon_sbs" alt="Exit icon">
+                <span>Exit</span>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

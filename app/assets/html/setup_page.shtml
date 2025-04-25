@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Walter">
+  <title>Setup Page</title>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/openchrono.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/openchrono.css">
+</head>
+
+<body>
+  
+  <div class="d-flex flex-column" style="text-align: center; height: 100vh; width: 100vw;">
+   <h1 style="margin: 0;">Setup</h1>
+   <!-- Chronographs -->
+   <div class="settings-container" style="margin-top: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color:aquamarine">
+    <div class="text"><h2>All your Chronographs</h2h2></div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="flex: 1; margin-right: 10px;">
+        <!-- First Item -->
+        <select id="chronograph" style="width: 100%;">
+          <!--#CHRONOGRAPH_DATA#--> 
+        </select>
+      </div>
+        <!-- Buttons Container -->
+        <div style="display: flex; gap: 5px; margin-left: auto;">
+          <!-- Plus Button -->
+          <button class="btn btn-small green" onclick="handleAction( 'AddChronograph');">
+            <i class="material-icons">add</i>
+          </button>
+          <!-- Pencil Button -->
+          <button class="btn btn-small blue" onclick="handleActionWithData( ['chronograph'], 'EditChronograph');">
+            <i class="material-icons">edit</i>
+          </button>
+        </div>
+    </div>
+  </div>
+<!-- Guns -->    
+    <div class="settings-container" style="margin-top: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color:aquamarine">
+      <div class="text"><h2>All your Guns</h2h2></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="flex: 1; margin-right: 10px;">
+          <!-- First Item -->
+          <select id="chronograph" style="width: 100%;">
+            <!--#GUN_DATA#--> 
+          </select>
+        </div>
+          <!-- Buttons Container -->
+          <div style="display: flex; gap: 5px; margin-left: auto;">
+            <!-- Plus Button -->
+            <button class="btn btn-small green" onclick="handleAction('AddGun');">
+              <i class="material-icons">add</i>
+            </button>
+            <!-- Pencil Button -->
+            <button class="btn btn-small blue" onclick="handleActionWithData( ['gun'], 'EditGun');">
+              <i class="material-icons">edit</i>
+            </button>
+          </div>
+      </div>
+    </div>
+    <!-- Ammo -->
+    <div class="settings-container" style="margin-top: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 10px; background-color:aquamarine">
+      <div class="text"><h2>All your Ammo</h2h2></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="flex: 1; margin-right: 10px;">
+          <!-- First Item -->
+          <select id="ammo" style="width: 100%;">
+            <!--#AMMO_DATA#--> 
+          </select>
+        </div>
+          <!-- Buttons Container -->
+          <div style="display: flex; gap: 5px; margin-left: auto;">
+            <!-- Plus Button -->
+            <button class="btn btn-small green" onclick="handleAction('AddAmmo');">
+              <i class="material-icons">add</i>
+            </button>
+            <!-- Pencil Button -->
+            <button class="btn btn-small blue" onclick="handleActionWithData(['ammo'], 'EditAmmo');">
+              <i class="material-icons">edit</i>
+            </button>
+          </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="btn btn-rectangle_90_sbs" style="text-align: center; height: 60px;"
+        onclick="handleAction('Back');">
+        <span>Back</span>
+      </button>
+    </div>
+  </div>
+  
+</body>
+
+</html>

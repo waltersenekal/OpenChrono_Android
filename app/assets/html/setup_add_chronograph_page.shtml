@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Walter">
+  <title>Main Page</title>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/openchrono.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/openchrono.css">
+</head>
+
+<body>
+  <div class="d-flex flex-column" style="text-align: center; height: 100vh; width: 100vw;">
+    <div class="settings-container">
+      <div class="text">
+        <h2>Select Chronograph Device</h2>
+        <div class="input-field col s12">
+          <select id="chronograph">
+            <!--#CHRONOGRAPH_DATA#-->  
+          </select>
+        </div>
+        <!-- New Friendly Name Input Field -->
+        <div class="input-field col s12">
+          <input type="text" id="friendlyName" placeholder="Enter Friendly Name" value ="#FRIENDLY_NAME#" >
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+
+      <button class="btn btn-rectangle_45_sbs" style="text-align: center; height: 60px;"
+      onclick="handleAction('Cancel');">
+      <span>Cancel</span>
+    </button>
+      <button class="btn btn-rectangle_45_sbs" style="text-align: center; height: 60px;"
+        onclick="handleActionWithData(['chronograph','friendlyName'], 'Save');">
+        <span>Save</span>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

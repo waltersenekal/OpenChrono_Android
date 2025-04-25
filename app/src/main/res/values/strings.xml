@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Open Chrono</string>
+    <string name="error">error</string>
+    <string name="close">close</string>
+</resources>
